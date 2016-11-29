@@ -2238,14 +2238,55 @@ www.1688.com
 $ git config --global user.name "atfkaka"
 $ git config --global user.email atfkaka@163.com
 
-ahehe1
--m "2016/11/29"
+http://www.ydt518.cn
+http://www.ydt518.com
 
-ssh-keygen -t rsa -C "atfkaka@163.com"
+https://github.com/atfkaka/MyDocument.git
+git@github.com:atfkaka/MyDocument.git
 
-q1文本
+本地建新库
+git init
+查看文件
+ls -ah
+增加文件夹下单个本地文件到暂存区
+git add something.txt
+提交
+git commit -m "备注"
+全部加入暂存区然后提交
+git add . 
+git commit -m "Bear 2016/11/29 14:34:32"
+commit之前回退全部未提交版本git checkout .
+commit之前回退指定文件git checkout 文件名
+如果是提交之后，要在版本的历史之间穿梭，先用git log可以查看提交历史获得commit_id
+然后使用命令:git reset --hard commit_id
 
-git tag
-haha
+关联远程库
+git remote add origin git@github.com:atfkaka/MyDocument.git
+第一次推送
+git push -u origin master
+推送
+git push origin master
 
-yaho
+从远程库克隆到本地
+git clone git@github.com:atfkaka/Doc1.git
+
+分支：
+查看分支：git branch
+创建分支：git branch <name>
+切换分支：git checkout <name>
+创建+切换分支：git checkout -b <name>
+合并某分支到当前分支：git merge <name>
+删除分支：git branch -d <name>
+推送分支:git remote<分支name>
+
+新建一个标签:git tag <name>
+指定标签信息:git tag -a <tagname> -m "blablabla..."
+查看所有标签:git tag
+推送一个本地标签:git push origin <tagname>
+推送全部未推送过的本地标签:git push origin --tags
+删除一个本地标签:git tag -d <tagname>
+删除一个远程标签:git push origin :refs/tags/<tagname>
+
+从标签创建一个分支:git checkout -b branch_name tag_name
+
+本地已更改
