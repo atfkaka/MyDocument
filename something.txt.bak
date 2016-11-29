@@ -2234,3 +2234,9 @@ www.1688.com
 [user]
 	email = atfkaka@163.com
 	name = atfkaka
+
+$ git config --global user.name "atfkaka"
+$ git config --global user.email atfkaka@163.com
+
+hahe1
+-m "2016/11/29"
