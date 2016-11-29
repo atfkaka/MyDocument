@@ -2240,3 +2240,5 @@ $ git config --global user.email atfkaka@163.com
 
 ahehe1
 -m "2016/11/29"
+
+ssh-keygen -t rsa -C "atfkaka@163.com"
